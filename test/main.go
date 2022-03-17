@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	result, err := divide(100.0, 0)
+	result, err := Divide(100.0, 0)
 	if err != nil {
 		log.Println(err)
 		return
@@ -17,7 +17,7 @@ func main() {
 
 }
 
-func divide(x, y float32) (float32, error) {
+func Divide(x, y float32) (float32, error) {
 	var result float32
 
 	if y == 0 {
